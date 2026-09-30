@@ -39,6 +39,51 @@
   margin-bottom: 1rem;
 }
 
+/* Analytics Stats */
+.statsContainer {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.statBox {
+  flex: 1;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.statTotal {
+  border-top: 4px solid #3b82f6;
+}
+
+.statPending {
+  border-top: 4px solid #f59e0b;
+}
+
+.statResolved {
+  border-top: 4px solid #10b981;
+}
+
+.statNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -86,6 +131,16 @@
   color: #6b7280;
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+.categoryBadge {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #bfdbfe;
 }
 
 .cardDesc {
