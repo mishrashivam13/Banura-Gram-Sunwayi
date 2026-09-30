@@ -22,7 +22,7 @@
   border: 1px solid #e5e7eb;
   text-align: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .qrTitle {
@@ -45,6 +45,11 @@
   border: 1px solid #e5e7eb;
   display: inline-block;
   margin-bottom: 1.5rem;
+  width: 220px; /* Normal size on screen */
+}
+
+.printOnlyText {
+  display: none;
 }
 
 .printBtn {
@@ -78,10 +83,32 @@
     border: none !important;
     margin: 0 !important;
     padding: 0 !important;
+    max-width: 100% !important;
   }
   .mainContent {
     justify-content: center !important;
     align-items: center !important;
     padding: 0 !important;
+  }
+  
+  /* Make QR very large for print */
+  .qrWrapper {
+    width: 500px !important;
+    border: none !important;
+  }
+  
+  /* Show instruction text only on print */
+  .printOnlyText {
+    display: block !important;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.4;
+  }
+  
+  /* Hide title and description on print to keep it clean */
+  .qrTitle, .qrDesc {
+    display: none !important;
   }
 }

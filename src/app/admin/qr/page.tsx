@@ -49,24 +49,24 @@ export default function QRCodeGenerator() {
 
       <main className={styles.mainContent}>
         <div className={styles.qrCard}>
-          <h1 className={styles.qrTitle}>पोर्टल QR कोड</h1>
-          <p className={styles.qrDesc}>
-            इस QR कोड को प्रिंट करें और पंचायत भवन पर लगाएँ।
-          </p>
 
           <div className={styles.qrWrapper}>
             {portalUrl ? (
               <QRCodeSVG 
                 value={portalUrl} 
-                size={220}
+                style={{ width: "100%", height: "auto" }}
                 bgColor={"#ffffff"}
                 fgColor={"#111827"}
                 level={"H"}
                 includeMargin={false}
               />
             ) : (
-              <div style={{ width: 220, height: 220, background: '#f3f4f6' }}></div>
+              <div style={{ width: "100%", aspectRatio: '1/1', background: '#f3f4f6' }}></div>
             )}
+            
+            <p className={styles.printOnlyText}>
+              इसे स्कैन करके अपने गाँव की<br/>समस्या इसमें डाल सकते हैं
+            </p>
           </div>
 
           <div>
