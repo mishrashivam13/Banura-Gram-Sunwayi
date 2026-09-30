@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 1.5rem;
+  padding-bottom: 80px; /* space for bottom nav */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qrCard {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.qrTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.qrDesc {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.qrWrapper {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.printBtn {
+  background: #2563eb;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.printBtn:hover {
+  background: #1d4ed8;
+}
