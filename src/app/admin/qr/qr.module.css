@@ -65,3 +65,23 @@
 .printBtn:hover {
   background: #1d4ed8;
 }
+
+@media print {
+  .container {
+    background: white !important;
+  }
+  .printBtn {
+    display: none !important;
+  }
+  .qrCard {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .mainContent {
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+}

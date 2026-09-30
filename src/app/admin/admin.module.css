@@ -162,3 +162,12 @@
 .navIcon {
   font-size: 1.25rem;
 }
+
+@media print {
+  .header, .bottomNav {
+    display: none !important;
+  }
+  .dashboard {
+    background: white !important;
+  }
+}
