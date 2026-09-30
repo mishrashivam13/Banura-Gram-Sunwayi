@@ -141,7 +141,7 @@ export default function CitizenPortal() {
       {/* Announcement Bar */}
       <div className={styles.announcementBar}>
         <span className={styles.announcementIcon}>🔔</span>
-        <marquee scrollamount="5">निवेदन: ग्राम पंचायत बनूड़ा के सर्वांगीण विकास के लिए आने वाले चुनाव में श्री नरेश कुमार शर्मा को अपना कीमती वोट देकर भारी मतों से विजयी बनाएँ। आपका एक वोट, गाँव का सुनहरा भविष्य!</marquee>
+        <div className={styles.marqueeContent}>निवेदन: ग्राम पंचायत बनूड़ा के सर्वांगीण विकास के लिए आने वाले चुनाव में श्री नरेश कुमार शर्मा को अपना कीमती वोट देकर भारी मतों से विजयी बनाएँ। आपका एक वोट, गाँव का सुनहरा भविष्य!</div>
       </div>
 
       <div className={styles.content}>

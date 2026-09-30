@@ -63,10 +63,25 @@
   align-items: center;
   gap: 0.5rem;
   box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marqueeContent {
+  display: inline-block;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-150%); }
 }
 
 .announcementIcon {
   animation: blink 1.5s infinite;
+  z-index: 10;
+  background: #ef4444;
+  padding-right: 0.5rem;
 }
 
 @keyframes blink {
